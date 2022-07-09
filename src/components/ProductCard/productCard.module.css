@@ -1,0 +1,9 @@
+.productCard_desc{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 40px 0;
+}
+
+.productCard_wrapper > img{
+    width: 1305px;
+}

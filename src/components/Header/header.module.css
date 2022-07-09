@@ -1,0 +1,23 @@
+.header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}

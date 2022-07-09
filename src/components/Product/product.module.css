@@ -1,0 +1,22 @@
+.product_wrapper{
+    background-color: black;
+}
+
+.product_wrapper > h1{
+    color: white;
+    font-weight: 100;
+    font-size: 54px;
+    margin-bottom: 60px;
+}
+
+h1{
+    color: white;
+    font-weight: 100
+}
+
+.productCards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+.benefits_wrapper{
+    background-color: black;
+}
+
+.benefits_wrapper > h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 44px;
+}
