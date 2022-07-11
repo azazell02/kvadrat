@@ -4,7 +4,7 @@ import BenefitCard from '../BenefitCard/BenefitCard';
 import css from "./benefits.module.css"
 export default function Benefits() {
   return (
-    <div className={"container " + css.benefits_wrapper}>
+    <div id='Benefits' className={"container " + css.benefits_wrapper}>
       <h1>Преимущества</h1>
       {
         BenefitsList.map((benefit) => <BenefitCard key={benefit.id} {...benefit}/>)

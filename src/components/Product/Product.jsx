@@ -5,7 +5,7 @@ import { ProductList } from '../../constants/ProductList';
 
 export default function Product() {
   return (
-    <div className={"container " + css.product_wrapper}>
+    <div id='Products' className={"container " + css.product_wrapper}>
       <h1>Наши продукты</h1>
       <div className={css.productCards}>
         {
