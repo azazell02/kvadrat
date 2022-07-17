@@ -1,0 +1,40 @@
+.feedback{
+    width: 86%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.feedback_image{
+    width: 40%;
+    height: 250px;
+}
+
+.feedback_image > img{
+    margin-left: 160px;
+    margin-bottom: 35px;
+}
+
+.feedback_right{
+    width: 60%;
+}
+
+.person_name{
+    display: flex;
+    justify-content: center;
+}
+
+.feedback_desc{
+    margin-top: 33px;
+    width: 99%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.feedback_title{
+    margin-bottom: 90px;
+    font-size: 44px;
+    font-weight: 100;
+}

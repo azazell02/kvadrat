@@ -1,9 +1,7 @@
-// Slider with feedbacks
 import React from "react";
-import FeedbackCard from "./FeedbackCard";
-import { FeedbackList } from "../../constants/FeedbackList";
 import Slider from "react-slick";
-import css from "./feedback.module.css";
+import SliderCard from "./SliderCard";
+import css from "./slider.module.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -31,12 +29,10 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default function Feedback() {
+function MainSlider({ products, productKeys }) {
   const settings = {
-    infinite: true,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 500,
+    dots: false,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -45,13 +41,16 @@ export default function Feedback() {
   };
 
   return (
-    <div id="Feedback">
-      <h1 className={"container " + css.feedback_title}>Отзывы</h1>
-      <Slider {...settings}>
-        {FeedbackList.map((feedback) => (
-          <FeedbackCard key={feedback.id} {...feedback} />
-        ))}
-      </Slider>
+    <div className={css.main_slider}>
+      {productKeys.map((item) => (
+        <Slider key={item} {...settings}>
+          {products[item].map(
+            el => <SliderCard key={el} el={el} />
+          )}
+        </Slider>
+      ))}
     </div>
   );
 }
+
+export default MainSlider;

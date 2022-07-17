@@ -1,31 +1,18 @@
 // Import the functions you need from the SDKs you need
-import firebase from 'firebase/compat/app';
-import { initializeApp } from "firebase/app";
-import 'firebase/compat/firestore';
+// import { initializeApp } from "firebase/compat/app";
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyATstBG7ZeA9x6uXEGThYpJuJDtanGCoBY",
-  authDomain: "kvadrat-6e1bd.firebaseapp.com",
-  projectId: "kvadrat-6e1bd",
-  storageBucket: "kvadrat-6e1bd.appspot.com",
-  messagingSenderId: "61954216595",
-  appId: "1:61954216595:web:cd672736f7ac836853f366",
-  measurementId: "G-VSXJHQ01H2"
+  apiKey: "AIzaSyAwsed79AtMXIrqtJZMWc2C-ANoksTbk7I",
+  authDomain: "solid-b83e9.firebaseapp.com",
+  projectId: "solid-b83e9",
+  storageBucket: "solid-b83e9.appspot.com",
+  messagingSenderId: "520223087142",
+  appId: "1:520223087142:web:2aa18107ae4779fed5a4e7",
+  measurementId: "G-7RE8ZEP9YP"
 };
 
-try{
-  firebase.initializeApp(firebaseConfig);
-} catch(error){
-  if(!/already exists/.test(error.message)){
-      console.error('Firebase initialization error', error.stack)
-  }
-}
+export const app = firebase.initializeApp(firebaseConfig);
+export const db = app.firestore();
 
-const app = initializeApp(firebaseConfig);
-export const db = firebase.firestore();
-export {app}
-// const Firebase = firebase.initializeApp(firebaseConfig)
-// // // Initialize Firebase
-// // export const app = initializeApp(firebaseConfig);
-// export const db = firebase.firestore()
-// export {Firebase}

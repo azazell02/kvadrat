@@ -7,3 +7,7 @@
 .productCard_wrapper > img{
     width: 1305px;
 }
+
+.productCard_wrapper > img:hover{
+    transform: scale(1);
+}

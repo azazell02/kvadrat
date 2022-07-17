@@ -1,5 +1,6 @@
 import React from 'react';
 import Benefits from '../components/Benefits/Benefits';
+import Feedback from '../components/Feedback/Feedback';
 import Footer from '../components/Footer/Footer';
 import Header from "../components/Header/Header"
 import Jumbotron from '../components/Jumbotron/Jumbotron';
@@ -11,6 +12,7 @@ const Homepage = () => {
       <Jumbotron />
       <Benefits />
       <Product />
+      <Feedback />
       <Footer />
     </>
   );

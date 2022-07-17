@@ -4,6 +4,7 @@
     background-image: url("/public/images/Rectangle 145.png");
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .jumbotron_center{

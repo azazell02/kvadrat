@@ -4,10 +4,11 @@ import { Route, Routes } from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
 
 function App() {
+
   return (
     <Routes>
       <Route element={<Homepage />} path="/" />
-      <Route element={<ProductPage />} path="Product" />
+      <Route element={<ProductPage />} path="products/:id" />
     </Routes>
   );
 }
