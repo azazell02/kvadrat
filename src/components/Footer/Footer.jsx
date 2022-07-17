@@ -15,9 +15,9 @@ export default function Footer() {
         <div className={css.footer_nav}>
           <a href="/Portfolio">Портфолио</a>
           <a href="/Service">Услуги</a>
+          <a href="/Contacts">Контакты</a>
           <a href="/Price">Стоимость</a>
           <a href="/Feedback">Отзывы</a>
-          <a href="/Contacts">Контакты</a>
         </div>
         <div className={css.footer_contacts}>
           <h1>Контакты</h1>

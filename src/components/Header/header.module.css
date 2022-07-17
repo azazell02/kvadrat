@@ -2,14 +2,16 @@
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 auto;
     height: 80px;
+    width: 90%;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
 }
 
 .nav a {
@@ -20,4 +22,51 @@
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
+}
+
+.menu.menu{
+    display: none;
+}
+
+.modal_window{
+    position: absolute;
+    top: 80px;
+    height: 0vh;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: .6s;
+    opacity: 0;
+}
+
+.modal_window a{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal_window.opened{
+    height: 70vh;
+    opacity: 1;
+}
+
+@media (max-width:1250px) {
+    .nav{
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 960px){
+    .menu.menu{
+        display: flex;
+    }
+    .nav{
+        display: none;
+    }
 }

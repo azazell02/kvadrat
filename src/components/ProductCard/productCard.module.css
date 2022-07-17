@@ -5,7 +5,7 @@
 }
 
 .productCard_wrapper > img{
-    width: 1305px;
+    width: 100%;
 }
 
 .productCard_wrapper > img:hover{

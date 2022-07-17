@@ -9,7 +9,7 @@ export default function Benefits() {
       {
         BenefitsList.map((benefit) => <BenefitCard key={benefit.id} {...benefit}/>)
       }
-      <img className='container' src='/images/Group 269.png' alt="#"/>
+      <img src='/images/Group 269.png' alt="#"/>
     </div>
   );
 }

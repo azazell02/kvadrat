@@ -36,7 +36,7 @@ export default function Feedback() {
     infinite: true,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 2000,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

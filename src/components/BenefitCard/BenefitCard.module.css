@@ -7,6 +7,7 @@
     margin-bottom: 40px;
 }
 
+
 h1{
     color: white;
 }
@@ -33,3 +34,17 @@ h2{
     font-weight: 100;
     font-size: 10px;
 }
+
+@media(max-width: 960px){
+    .benefitCard_wrapper{
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+    .benefitCard_left{
+        width: 80%;
+    }
+    .benefitCard_right{
+        width: 80%;
+    }
+}
+

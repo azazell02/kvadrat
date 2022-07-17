@@ -1,5 +1,8 @@
 footer{
-    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 90px;
     background-color: #fff;
     margin-top: 90px;
@@ -65,4 +68,39 @@ footer{
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+@media(max-width:1200px){
+    .input_wrapper{
+        flex-direction: column;
+        grid-gap: 15px;
+    }
+    .footer_center{
+        flex-direction: column;
+        grid-gap: 35px;
+        
+    }
+    .footer_nav{
+        grid-gap: 15px; 
+        text-align: center;
+    }
+    .footer_contacts{
+        grid-gap: 10px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px){
+    .mediaIcons{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 15px;
+        height: fit-content;
+        margin-bottom: 40px;
+        justify-content: center;
+        width: 80%;
+    }
+    .footer_center > img{
+        width: 80%;
+    }
 }
