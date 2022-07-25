@@ -16,7 +16,6 @@ export default function Header() {
           <a href="#Products">Наши продукты</a>
           <a href="/Cases">Кейсы</a>
           <a href="#Feedback">Отзывы</a>
-          <a href="/Map">Карта</a>
         </nav>
         <button
           onClick={() => setOpened(!opened)}
@@ -42,7 +41,6 @@ export default function Header() {
         <a href="#Products">Наши продукты</a>
         <a href="/Cases">Кейсы</a>
         <a href="#Feedback">Отзывы</a>
-        <a href="/Map">Карта</a>
       </div>
     </>
   );

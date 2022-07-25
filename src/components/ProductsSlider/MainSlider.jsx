@@ -34,6 +34,8 @@ function MainSlider({ products, productKeys }) {
     dots: false,
     infinite: false,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
