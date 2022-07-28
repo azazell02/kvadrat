@@ -11,7 +11,7 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 60%;
 }
 
 .nav a {

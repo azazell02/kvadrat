@@ -13,8 +13,8 @@ function App() {
 
   return (
     <Routes>
-      <Route element={<Homepage />} path="/" />
-      <Route element={<ProductPage />} path="products/:id" />
+      <Route element={<Homepage />} exact path="/" />
+      <Route element={<ProductPage />} exact path="products/:id" />
     </Routes>
   );
 }

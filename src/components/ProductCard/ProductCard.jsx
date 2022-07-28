@@ -2,7 +2,7 @@ import React from "react";
 import css from "./productCard.module.css";
 import { Link } from "react-router-dom";
 
-export default React.memo(function ProductCard({ img, title, square, path, isOdd }) {
+export default React.memo(function ProductCard({ img, title, square, path }) {
   return (
     <Link to={`products/${path}`}>
       <div className={`${css.productCard_wrapper} wow fadeInLeft`}>
